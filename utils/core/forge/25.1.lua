@@ -14,7 +14,7 @@ local pkgNameVer = myModuleFullName()
 local pkgRoot    = pathJoin(modbase, "cirrus-ex-software/utils/core", pkgNameVer)
 
 local userHome = os.getenv("HOME")
-local userWork = string.gsub(userHome, "home", "work", 1)
+local userWork = string.gsub(userHome, "home", "epccfs", 1)
 
 setenv("FORGE_ROOT",       pkgRoot)
 setenv("FORGE_MPIRUN",     "/usr/bin/srun")
